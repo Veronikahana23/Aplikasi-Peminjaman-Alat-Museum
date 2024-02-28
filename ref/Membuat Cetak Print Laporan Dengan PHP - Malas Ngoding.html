@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding</title>
+
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.malasngoding.com/xmlrpc.php">
+	<link href="https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/" hreflang="id-id" rel="alternate">
+
+	<link rel="icon" href="https://www.malasngoding.com/wp-content/uploads/2018/09/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="https://www.malasngoding.com/wp-content/uploads/2018/09/favicon.ico" type="image/x-icon">
+
+	<!-- Start Alexa Certify Javascript -->
+	<meta name="alexaVerifyID" content="k01W28iBj2zgYveD7Z5pRA_SH6g">
+	<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/osd.js.download"></script><script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/sdk.js.download" async="" crossorigin="anonymous"></script><script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(7).txt"></script><script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(8).txt" id="google_shimpl"></script><script id="facebook-jssdk" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/sdk.js(1).download"></script><script async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/atrk.js.download"></script><script type="text/javascript">
+		_atrk_opts = { atrk_acct:"w+4Am1akGFL1L7", domain:"malasngoding.com",dynamic: true};
+		(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+	</script>
+	<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=w+4Am1akGFL1L7" style="display:none" height="1" width="1" alt="" /></noscript>
+	<!-- End Alexa Certify Javascript -->
+
+	
+		
+<!-- This site is optimized with the Yoast SEO plugin v11.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Membuat Cetak Print Laporan Dengan PHP Membuat Cetak Print Laporan Dengan PHP - Selamat datang di tutorial membuat cetak print laporan dengan PHP. pada">
+<link rel="canonical" href="https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding">
+<meta property="og:description" content="Membuat Cetak Print Laporan Dengan PHP Membuat Cetak Print Laporan Dengan PHP - Selamat datang di tutorial membuat cetak print laporan dengan PHP. pada">
+<meta property="og:url" content="https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/">
+<meta property="og:site_name" content="Malas Ngoding">
+<meta property="article:author" content="https://www.facebook.com/dickyalfarabi">
+<meta property="article:tag" content="cara membuat cetak laporan di php">
+<meta property="article:tag" content="cara membuat perintah print pada php">
+<meta property="article:tag" content="cara membuat print preview dengan php">
+<meta property="article:tag" content="cetak data php">
+<meta property="article:tag" content="cetak laporan dengan php">
+<meta property="article:tag" content="membuat cetak laporan dengan php">
+<meta property="article:tag" content="membuat halaman cetak print dengan php">
+<meta property="article:tag" content="membuat laporan berdasarkan tanggal dengan php">
+<meta property="article:tag" content="membuat laporan pdf php berdasarkan kondisi">
+<meta property="article:tag" content="membuat print laporan dengan php">
+<meta property="article:tag" content="print data dengan php">
+<meta property="article:tag" content="print data php">
+<meta property="article:tag" content="print laporan dengan php">
+<meta property="article:tag" content="print php">
+<meta property="article:tag" content="print()">
+<meta property="article:tag" content="script php cetak laporan pdf">
+<meta property="article:tag" content="script php print pdf">
+<meta property="article:tag" content="source code cetak laporan dengan php">
+<meta property="article:tag" content="tombol cetak php">
+<meta property="article:tag" content="tombol print php">
+<meta property="article:tag" content="window.print()">
+<meta property="article:section" content="PHP">
+<meta property="article:published_time" content="2018-06-03T07:44:24+00:00">
+<meta property="article:modified_time" content="2018-06-05T02:45:02+00:00">
+<meta property="og:updated_time" content="2018-06-05T02:45:02+00:00">
+<meta property="og:image" content="https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.jpg">
+<meta property="og:image:secure_url" content="https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.jpg">
+<meta property="og:image:width" content="945">
+<meta property="og:image:height" content="595">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Membuat Cetak Print Laporan Dengan PHP Membuat Cetak Print Laporan Dengan PHP - Selamat datang di tutorial membuat cetak print laporan dengan PHP. pada">
+<meta name="twitter:title" content="Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding">
+<meta name="twitter:image" content="https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.jpg">
+<meta name="twitter:creator" content="@dikialfarabi">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.malasngoding.com/#organization","name":"","url":"https://www.malasngoding.com/","sameAs":[]},{"@type":"WebSite","@id":"https://www.malasngoding.com/#website","url":"https://www.malasngoding.com/","name":"Malas Ngoding","publisher":{"@id":"https://www.malasngoding.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.malasngoding.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#primaryimage","url":"https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.jpg","width":945,"height":595,"caption":"membuat cetak print laporan dengan php"},{"@type":"WebPage","@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#webpage","url":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/","inLanguage":"en-US","name":"Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding","isPartOf":{"@id":"https://www.malasngoding.com/#website"},"primaryImageOfPage":{"@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#primaryimage"},"datePublished":"2018-06-03T07:44:24+00:00","dateModified":"2018-06-05T02:45:02+00:00","description":"Membuat Cetak Print Laporan Dengan PHP Membuat Cetak Print Laporan Dengan PHP - Selamat datang di tutorial membuat cetak print laporan dengan PHP. pada","breadcrumb":{"@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.malasngoding.com/","url":"https://www.malasngoding.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/","url":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/","name":"Membuat Cetak Print Laporan Dengan PHP"}}]},{"@type":"Article","@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#article","isPartOf":{"@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#webpage"},"author":{"@id":"https://www.malasngoding.com/author/admin/#author"},"headline":"Membuat Cetak Print Laporan Dengan PHP","datePublished":"2018-06-03T07:44:24+00:00","dateModified":"2018-06-05T02:45:02+00:00","commentCount":"7","mainEntityOfPage":{"@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#webpage"},"publisher":{"@id":"https://www.malasngoding.com/#organization"},"image":{"@id":"https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#primaryimage"},"keywords":"cara membuat cetak laporan di php,cara membuat perintah print pada php,cara membuat print preview dengan php,cetak data php,cetak laporan dengan php,membuat cetak laporan dengan php,membuat halaman cetak print dengan php,membuat laporan berdasarkan tanggal dengan php,membuat laporan pdf php berdasarkan kondisi,membuat print laporan dengan php,print data dengan php,print data php,print laporan dengan php,print php,print(),script php cetak laporan pdf,script php print pdf,source code cetak laporan dengan php,tombol cetak php,tombol print php,window.print()","articleSection":"PHP"},{"@type":["Person"],"@id":"https://www.malasngoding.com/author/admin/#author","name":"Diki Alfarabi Hadi","image":{"@type":"ImageObject","@id":"https://www.malasngoding.com/#authorlogo","url":"https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=96&d=mm&r=g","caption":"Diki Alfarabi Hadi"},"description":"Coding enthusiast.\r\nSomeone who love learn something new. especially about web programming and web design. happy to share about knowledge and learn from other.","sameAs":["https://www.facebook.com/dickyalfarabi","https://twitter.com/https://twitter.com/dikialfarabi"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://cdn.datatables.net/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Malas Ngoding » Membuat Cetak Print Laporan Dengan PHP Comments Feed" href="https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.malasngoding.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="crayon-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-classic-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/classic.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-font-monaco-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/monaco.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/woocommerce-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/woocommerce-smallscreen.css" type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/woocommerce.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="font-awesome-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="datatables-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery.dataTables.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/style(1).css" type="text/css" media="all">
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery-migrate.min.js.download" defer="defer" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/www.malasngoding.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/crayon.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery.dataTables.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/bootstrap.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/popper.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/holder.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/typed.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/script.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/malasngoding.js.download" defer="defer" type="text/javascript"></script>
+<link rel="https://api.w.org/" href="https://www.malasngoding.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.malasngoding.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.malasngoding.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.2.2">
+<meta name="generator" content="WooCommerce 3.6.4">
+<link rel="shortlink" href="https://www.malasngoding.com/?p=3003">
+<link rel="alternate" type="application/json+oembed" href="https://www.malasngoding.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.malasngoding.com%2Fmembuat-cetak-print-laporan-dengan-php%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.malasngoding.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.malasngoding.com%2Fmembuat-cetak-print-laporan-dengan-php%2F&amp;format=xml">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+	<!-- google site verification -->
+	<meta name="google-site-verification" content="hhP-8nxm9hqPPU4TWzvch7L5U2B_qr-nviWzHhOMY3g">
+	<meta name="msvalidate.01" content="7455FA86CA32441C7F0838B9F61317DA">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-71840134-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- end google site verification -->
+
+	
+<link rel="preload" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(9).txt" as="script"><script type="text/javascript" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(9).txt"></script><link rel="preload" href="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(10).txt" as="script"><script type="text/javascript" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(10).txt"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body data-rsssl="1" class="post-template-default single single-post postid-3003 single-format-standard woocommerce-js" style="">
+	
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.5";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header>
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-white navbar-malasngoding-1 p-3" role="navigation">
+			<div class="container">
+				<!-- <a class="navbar-brand" href="https://www.malasngoding.com">MALAS<b>NGODING</b>.com</a> -->
+				<a class="navbar-brand p-0 m-0" href="https://www.malasngoding.com/" title="Malas Ngoding | Tutorial belajar pemrograman web, mobile, desktop" alt="Malas Ngoding | Tutorial belajar pemrograman web, mobile, desktop">
+					<img class="logo" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/malas-ngoding-tutorial-pemrograman-bahasa-indonesia-lengkap.png">				
+				</a>
+
+				<button class="navbar-toggler justify-content-center" type="button" data-toggle="collapse" data-target="#menu-primary-1" aria-controls="menu-primary-1" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div id="menu-primary-1" class="collapse navbar-collapse"><ul id="menu-menu-primary" class="nav navbar-nav ml-auto navbar-right"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2299 nav-item"><a title="HOME" href="https://www.malasngoding.com/" class="nav-link">HOME</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1620 nav-item"><a title="SHOP" href="https://www.malasngoding.com/shop" class="nav-link">SHOP</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-923 nav-item"><a title="TUTORIAL" href="https://www.malasngoding.com/tutorial/" class="nav-link">TUTORIAL</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929 nav-item"><a title="DEMO" href="https://www.malasngoding.com/demo/" class="nav-link">DEMO</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2390 nav-item"><a title="BUKTI PENGIRIMAN" href="https://www.malasngoding.com/bukti-pengiriman/" class="nav-link">BUKTI PENGIRIMAN</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-360 nav-item"><a title="LABORATORIUM" href="https://www.malasngoding.com/lab" class="nav-link">LABORATORIUM</a></li>
+</ul></div>
+			</div>
+		</nav>
+		
+	</header>
+<div class="page-content page-single" style="height: auto !important;">
+	<section class="bg-light" style="height: auto !important;">
+		
+		<div class="container breadcrumbs my-0 pl-3 pr-3 pt-4 pb-4">
+			<p id="breadcrumbs"><span><span><a href="https://www.malasngoding.com/">Home</a> » <span class="breadcrumb_last" aria-current="page">Membuat Cetak Print Laporan Dengan PHP</span></span></span></p>			
+		</div>
+
+		<div class="container" style="height: auto !important;">
+			<div class="row" style="height: auto !important;">			
+				<div class="col-lg-8 col-xs-12 col-sm-12" style="height: auto !important; min-height: 0px !important;">
+
+					
+							<!-- Main content -->
+							<div class="card card-post" style="height: auto !important;">
+								<div class="card-body" style="height: auto !important;">
+									<!-- Post -->
+									<article class="post-single  has-thumbnail " style="height: auto !important;">
+										
+										<span class="meta-category">
+											<a class="text-primary post-category" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>										</span>
+
+										<h1 class="post-title entry-title pb-2">
+											Membuat Cetak Print Laporan Dengan PHP										</h1>	
+
+										<hr class="pt-4 pb-1">
+
+										<div class="thumb">
+											<img width="945" height="595" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/membuat-cetak-print-laporan-dengan-php.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="membuat cetak print laporan dengan php" srcset="https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.jpg 945w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-600x378.jpg 600w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-300x189.jpg 300w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-768x484.jpg 768w" sizes="(max-width: 945px) 100vw, 945px">		
+										</div>
+
+										<div class="caption" style="height: auto !important;">
+
+											<div class="postmeta semua-sembunyi">
+												<ul class="postmeta">
+													<li>By 				
+														<span class="vcard author post-author">
+															<a class="url fn n" href="https://www.malasngoding.com/author/admin/">Diki Alfarabi Hadi</a>
+														</span>				
+													</li>
+													<li><span class="meta-date updated"><time class="entry-date published updated">3 June 2018</time></span></li>			
+													<li>
+														<span class="meta-category">		
+															<a class="text-muted" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>														</span>										
+													</li>		
+												</ul>	
+											</div>
+
+
+                                        <script async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(11).txt"></script>
+										<!-- Mading -->
+										<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1836273468394125" data-ad-slot="1291596698" data-ad-format="auto" data-adsbygoogle-status="done" data-overlap-observer-io="false"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><iframe width="695" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 695px; height: 280px; overflow: visible;" __idm_frm__="97" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(4).html"></iframe></ins></ins></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>
+										
+										
+											<div class="post-single-content" style="height: auto !important;">
+
+
+                                            <h2 style="text-align: center;">Membuat Cetak Print Laporan Dengan PHP</h2>
+<p><em><strong>Membuat Cetak Print Laporan Dengan PHP</strong></em> – Selamat datang di tutorial membuat cetak print laporan dengan PHP. pada tutorial ini kita akan belajar tentang cara membuat cetak laporan atau print laporan dengan PHP. fitur print laporan yang akan kita buat ini hanya menggunakan syntax atau perintah <strong>print()</strong> dari javascript. halaman yang akan di cetak atau di print akan muncul langsung pada browser. fungsi print() sangat mudah untuk digunakan. selengkapnya silahkan teman-teman baca penjelasan tentang <strong>membuat cetak print laporan dengan PHP</strong> berikut.</p>
+<h3>Membuat Cetak Print Laporan Dengan PHP</h3>
+<p>Langsung saja kita mulai, untuk membuat cetak print laporan dengan PHP, pada tutorial ini kita akan membuat contoh dengan membuat 2 buah file PHP. yaitu file index.php dan file cetak1.php. silahkan langsung saja teman-teman ikuti. penjelasan tentang membuat cetak print laporan dengan php nya akan saya jelaskan pada bagian akhir.</p>
+<p>Buat sebuah folder baru dengan nama “<strong>cetak_print</strong>” dalam folder “htdocs”. file index.php dan file cetak1.php ini akan kita simpan dalam folder cetak_print ini.</p>
+<div id="attachment_3008" style="width: 712px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-3008" class=" wp-image-3008" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Screen-Shot-2018-06-03-at-1.59.19-PM.png" alt="membuat cetak print laporan dengan php" width="702" height="534" srcset="https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-1.59.19-PM.png 1146w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-1.59.19-PM-600x457.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-1.59.19-PM-300x228.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-1.59.19-PM-768x584.png 768w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-1.59.19-PM-1024x779.png 1024w" sizes="(max-width: 702px) 100vw, 702px"><p id="caption-attachment-3008" class="wp-caption-text">membuat cetak print laporan dengan php</p></div>
+<p>buat sebuah file baru dengan nama index.php dalam folder cetak_print.</p>
+<p>index.php</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5e43b94c7a44c378753599" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 13px !important; line-height: 22px !important; height: auto;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 13px !important; height: 19.5px !important; line-height: 19.5px !important; margin-top: -19px; display: none; position: absolute; z-index: 2;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><div class="crayon-button crayon-nums-button crayon-pressed" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code" style="display: none;"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly="" style="tab-size: 4; font-size: 13px !important; line-height: 22px !important; z-index: 0; opacity: 0; overflow: hidden;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;MEMBUAT CETAK PRINT LAPORAN DENGAN PHP - WWW.MALASNGODING.COM&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;center&gt;
+		&lt;h2&gt;MEMBUAT CETAK PRINT LAPORAN DENGAN PHP - WWW.MALASNGODING.COM&lt;/h2&gt;
+	&lt;/center&gt;
+
+
+
+	&lt;a href="cetak1.php" target="_BLANK"&gt;TES PRINT&lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</textarea></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 22px !important;"><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-2">2</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-4">4</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-6">6</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-8">8</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-10">10</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-12">12</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-14">14</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a44c378753599-16">16</div><div class="crayon-num" data-line="crayon-5e43b94c7a44c378753599-17">17</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 22px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-1"><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-e">DOCTYPE </span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-2"><span class="crayon-o">&lt;</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-3"><span class="crayon-o">&lt;</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-4"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">title</span><span class="crayon-o">&gt;</span><span class="crayon-e">MEMBUAT </span><span class="crayon-e">CETAK </span><span class="crayon-e">PRINT </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">DENGAN </span><span class="crayon-v">PHP</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">WWW</span><span class="crayon-sy">.</span><span class="crayon-v">MALASNGODING</span><span class="crayon-sy">.</span><span class="crayon-v">COM</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">title</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-5"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-6"><span class="crayon-o">&lt;</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-8"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">center</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-9"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span><span class="crayon-e">MEMBUAT </span><span class="crayon-e">CETAK </span><span class="crayon-e">PRINT </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">DENGAN </span><span class="crayon-v">PHP</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">WWW</span><span class="crayon-sy">.</span><span class="crayon-v">MALASNGODING</span><span class="crayon-sy">.</span><span class="crayon-v">COM</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-10"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">center</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-11">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-12">&nbsp;</div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-13">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-14"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">"cetak1.php"</span><span class="crayon-h"> </span><span class="crayon-v">target</span><span class="crayon-o">=</span><span class="crayon-s">"_BLANK"</span><span class="crayon-o">&gt;</span><span class="crayon-e">TES </span><span class="crayon-v">PRINT</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-15">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a44c378753599-16"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a44c378753599-17"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0016 seconds] -->
+<p>kemudian buat sebuah file PHP baru lagi dengan nama cetak1.php dalam folder cetak_print.</p>
+<p>cetak1.php</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5e43b94c7a458814207427" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 13px !important; line-height: 22px !important; height: auto;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 13px !important; height: 19.5px !important; line-height: 19.5px !important; margin-top: -20px; display: none; position: absolute; z-index: 2;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span><div class="crayon-button crayon-nums-button crayon-pressed" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button crayon-pressed" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important; margin-top: -18px; display: none;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly="" style="tab-size: 4; font-size: 13px !important; line-height: 22px !important; z-index: 1; opacity: 1; overflow: hidden; height: 622px;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;MEMBUAT CETAK PRINT LAPORAN DENGAN PHP - WWW.MALASNGODING.COM&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;center&gt;
+		&lt;h2&gt;TUTORIAL CETAK PRINT LAPORAN DENGAN PHP&lt;/h2&gt;
+		&lt;h4&gt;CONTOH LAPORAN YANG DI PRINT - WWW.MALASNGODING.COM&lt;/h4&gt;
+	&lt;/center&gt;
+
+	&lt;br/&gt;
+
+	&lt;p&gt;
+		Tutorial membuat cetak print laporan dengan php. pada tutorial ini kita akan belajar cara membuat cetak laporan pada PHP dengan cara paling mudah.
+	&lt;/p&gt;
+
+	&lt;p&gt;
+		Ini adalah contoh data yang diprint pada tutorial &lt;b&gt;MEMBUAT CETAK PRINT LAPORAN DENGAN PHP&lt;/b&gt; dari &lt;b&gt;www.malasngoding.com&lt;/b&gt;, halaman ini akan dicetak sesuai dengan format HTML yang terdapat dalam file cetak1.php ini.
+	&lt;/p&gt;
+
+	&lt;script&gt;
+		window.print();
+	&lt;/script&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;</textarea></div>
+			<div class="crayon-main" style="position: relative; z-index: 0; overflow: hidden; opacity: 0;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 22px !important;"><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-2">2</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-4">4</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-6">6</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-8">8</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-10">10</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-12">12</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-14">14</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-16">16</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-18">18</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-20">20</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-22">22</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-24">24</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-26">26</div><div class="crayon-num" data-line="crayon-5e43b94c7a458814207427-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5e43b94c7a458814207427-28">28</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 22px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5e43b94c7a458814207427-1"><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-e">DOCTYPE </span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-2"><span class="crayon-o">&lt;</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-3"><span class="crayon-o">&lt;</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-4"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">title</span><span class="crayon-o">&gt;</span><span class="crayon-e">MEMBUAT </span><span class="crayon-e">CETAK </span><span class="crayon-e">PRINT </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">DENGAN </span><span class="crayon-v">PHP</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">WWW</span><span class="crayon-sy">.</span><span class="crayon-v">MALASNGODING</span><span class="crayon-sy">.</span><span class="crayon-v">COM</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">title</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-5"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-6"><span class="crayon-o">&lt;</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-8"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">center</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-9"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span><span class="crayon-e">TUTORIAL </span><span class="crayon-e">CETAK </span><span class="crayon-e">PRINT </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">DENGAN </span><span class="crayon-v">PHP</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-10"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">h4</span><span class="crayon-o">&gt;</span><span class="crayon-e">CONTOH </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">YANG </span><span class="crayon-e">DI </span><span class="crayon-v">PRINT</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-v">WWW</span><span class="crayon-sy">.</span><span class="crayon-v">MALASNGODING</span><span class="crayon-sy">.</span><span class="crayon-v">COM</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">h4</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-11"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">center</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-12">&nbsp;</div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-13"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-14">&nbsp;</div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-15"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">p</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-16"><span class="crayon-h">		</span><span class="crayon-e">Tutorial </span><span class="crayon-e">membuat </span><span class="crayon-e">cetak </span><span class="crayon-e">print </span><span class="crayon-e">laporan </span><span class="crayon-e">dengan </span><span class="crayon-v">php</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-e">pada </span><span class="crayon-e">tutorial </span><span class="crayon-e">ini </span><span class="crayon-e">kita </span><span class="crayon-e">akan </span><span class="crayon-e">belajar </span><span class="crayon-e">cara </span><span class="crayon-e">membuat </span><span class="crayon-e">cetak </span><span class="crayon-e">laporan </span><span class="crayon-e">pada </span><span class="crayon-e">PHP </span><span class="crayon-e">dengan </span><span class="crayon-e">cara </span><span class="crayon-e">paling </span><span class="crayon-v">mudah</span><span class="crayon-sy">.</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-17"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">p</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-18">&nbsp;</div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-19"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">p</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-20"><span class="crayon-h">		</span><span class="crayon-e">Ini </span><span class="crayon-e">adalah </span><span class="crayon-e">contoh </span><span class="crayon-e">data </span><span class="crayon-e">yang </span><span class="crayon-e">diprint </span><span class="crayon-e">pada </span><span class="crayon-v">tutorial</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">b</span><span class="crayon-o">&gt;</span><span class="crayon-e">MEMBUAT </span><span class="crayon-e">CETAK </span><span class="crayon-e">PRINT </span><span class="crayon-e">LAPORAN </span><span class="crayon-e">DENGAN </span><span class="crayon-v">PHP</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">b</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-v">dari</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">b</span><span class="crayon-o">&gt;</span><span class="crayon-v">www</span><span class="crayon-sy">.</span><span class="crayon-v">malasngoding</span><span class="crayon-sy">.</span><span class="crayon-v">com</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">b</span><span class="crayon-o">&gt;</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">halaman </span><span class="crayon-e">ini </span><span class="crayon-e">akan </span><span class="crayon-e">dicetak </span><span class="crayon-e">sesuai </span><span class="crayon-e">dengan </span><span class="crayon-e">format </span><span class="crayon-e">HTML </span><span class="crayon-e">yang </span><span class="crayon-e">terdapat </span><span class="crayon-e">dalam </span><span class="crayon-e">file </span><span class="crayon-v">cetak1</span><span class="crayon-sy">.</span><span class="crayon-e">php </span><span class="crayon-v">ini</span><span class="crayon-sy">.</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-21"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">p</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-22">&nbsp;</div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-23"><span class="crayon-h">	</span><span class="crayon-ta">&lt;script&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-24"><span class="crayon-h">		</span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-e">print</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-25"><span class="crayon-h">	</span><span class="crayon-ta">&lt;/script&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-26"><span class="crayon-h">	</span></div><div class="crayon-line" id="crayon-5e43b94c7a458814207427-27"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5e43b94c7a458814207427-28"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0028 seconds] -->
+<p>coba teman-teman perhatikan pada file index.php. pada file index.php kita membuat <a href="https://www.malasngoding.com/belajar-html-membuat-hyperlink-pada-html/" target="_blank" rel="noopener noreferrer">hyperlink</a> atau link “TES PRINT” yang mengarahkan ke file cetak1.php pada saat di klik.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5e43b94c7a45e968309787" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 13px !important; line-height: 22px !important; height: auto;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 13px !important; height: 19.5px !important; line-height: 19.5px !important; margin-top: -20px; display: none; z-index: 4;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><div class="crayon-button crayon-nums-button crayon-pressed" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code" style="display: none;"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly="" style="tab-size: 4; font-size: 13px !important; line-height: 22px !important; z-index: 0; opacity: 0; overflow: hidden;">&lt;a href="cetak1.php" target="_BLANK"&gt;TES PRINT&lt;/a&gt;</textarea></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 22px !important;"><div class="crayon-num" data-line="crayon-5e43b94c7a45e968309787-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 22px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5e43b94c7a45e968309787-1"><span class="crayon-o">&lt;</span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">"cetak1.php"</span><span class="crayon-h"> </span><span class="crayon-v">target</span><span class="crayon-o">=</span><span class="crayon-s">"_BLANK"</span><span class="crayon-o">&gt;</span><span class="crayon-e">TES </span><span class="crayon-v">PRINT</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p>selanjutnya pada file cetak1.php kita membuat contoh halaman yang ingin di cetak. bisa teman-teman perhatikan pada file cetak1.php, pada file tersebut kita membuat halaman sederhana yang menampilkan beberapa paragraf sebagai contoh halaman yang akan di cetak atau di print.</p>													<div class="content-iklan">
+														
+														<script async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(11).txt"></script>
+														<!-- Mading -->
+														<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1836273468394125" data-ad-slot="1291596698" data-ad-format="auto" data-adsbygoogle-status="done" data-overlap-observer-io="false"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><iframe width="695" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 695px; height: 280px; overflow: visible;" __idm_frm__="99" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(5).html"></iframe></ins></ins></ins>
+														<script>
+															(adsbygoogle = window.adsbygoogle || []).push({});
+														</script>
+														
+													</div>
+													
+<p>yang membedakannya adalah fungsi <strong>print() </strong>yang sempat saya singgung sebelumnya. dengan fungsi print() dari javascript ini kita bisa memerintahkan halaman untuk dicetak. halaman yang dicetak adalah halaman yang terdapat fungsi print() (seperti pada file cetak1.php).</p>
+<p>Selanjutnya mari kita lihat hasilnya. karena file index.php dan cetak1.php tadi kita buat dalam folder “cetak_print”, maka langsung saja kita akses <em>http://localhost/cetak_print/</em> pada browser.</p>
+<div id="attachment_3009" style="width: 721px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-3009" class=" wp-image-3009" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/membuat-cetak-print-laporan-dengan-php.png" alt="membuat cetak print laporan dengan php" width="711" height="445" srcset="https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php.png 2880w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-600x375.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-300x188.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-768x480.png 768w, https://www.malasngoding.com/wp-content/uploads/2018/06/membuat-cetak-print-laporan-dengan-php-1024x640.png 1024w" sizes="(max-width: 711px) 100vw, 711px"><p id="caption-attachment-3009" class="wp-caption-text">membuat cetak print laporan dengan php</p></div>
+<p>seperti yang telah kita buat pada file index.php, kita membuat sebuah link tes print. dimana link tersebut akan mencetak halaman file cetak1.php jika di klik. sekarang klik pada “TES PRINT”.</p>												
+												    <div class="content-iklan">
+												        <a rel="nofollow" href="https://woro.in/malasngoding" target="_blank">
+														<img class="article-banner-x" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/banner-jagoan.jpg" style="width:100%;">
+														</a>
+													</div>
+												
+<div id="attachment_3010" style="width: 760px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-3010" class=" wp-image-3010" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Screen-Shot-2018-06-03-at-2.12.27-PM.png" alt="membuat cetak laporan dengan PHP" width="750" height="469" srcset="https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.27-PM.png 2880w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.27-PM-600x375.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.27-PM-300x188.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.27-PM-768x480.png 768w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.27-PM-1024x640.png 1024w" sizes="(max-width: 750px) 100vw, 750px"><p id="caption-attachment-3010" class="wp-caption-text">membuat cetak laporan dengan PHP</p></div>
+<p>maka halaman akan di alihkan ke file cetak1.php. di sini kita bisa langsung print laporan dengan klik tombol cetak jika sudah terhubung dengan printer. karena di sini saya masih belum menghubungkan printer, maka tombol cetak nya masih di disable.</p>
+<p>Di sini saya menggunakan OS X, maka tampilan nya seperti gambar yang saya lampirkan, jika teman-teman menggunakan sistem operasi windows, tampilannya tidak jauh berbeda.</p>
+<div id="attachment_3011" style="width: 803px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-3011" class=" wp-image-3011" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Screen-Shot-2018-06-03-at-2.12.51-PM.png" alt="membuat print laporan dengan PHP" width="793" height="496" srcset="https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.51-PM.png 2880w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.51-PM-600x375.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.51-PM-300x188.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.51-PM-768x480.png 768w, https://www.malasngoding.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-03-at-2.12.51-PM-1024x640.png 1024w" sizes="(max-width: 793px) 100vw, 793px"><p id="caption-attachment-3011" class="wp-caption-text">membuat print laporan dengan PHP</p></div>
+<p>di <a href="https://id.wikipedia.org/wiki/MacOS" target="_blank" rel="noopener noreferrer">OS X</a> bisa langsung di ubah ke PDF dengan memilih menampilkan ke PDF sebagai pratinjau pada opsi pilihan sebelah kiri bawah. hasilnya seperti contoh di atas.</p>
+<p>Sekian tutorial <strong>Membuat Cetak Print Laporan Dengan PHP</strong>. sangat mudah bukan. kesimpulannya kita tinggal menambahkan perintah <em>window.print()</em> saja pada halaman yang ingin di cetak.</p>
+<p>Pada tutorial selanjutnya kita akan belajar cara membuat cetak laporan dara dari database dengan PHP.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Incoming search terms:</h4><ul><li>cara membuat cetak laporan di php</li><li>source code cetak laporan dengan php</li><li>cara membuat print preview dengan php</li><li>cara print php</li><li>script print php</li><li>cara mencetak laporan dari phpmysql</li><li>membuat cetak laporan dari database</li><li>cetak laporan di php</li><li>membuat report dengan php</li><li>cetak php</li></ul><p></p>											
+													
+
+											</div>
+											
+											<script async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(11).txt"></script>
+										<!-- Mading -->
+										<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1836273468394125" data-ad-slot="1291596698" data-ad-format="auto" data-adsbygoogle-status="done" data-overlap-observer-io="false"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:695px;background-color:transparent;"><iframe width="695" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 695px; height: 280px; overflow: visible;" __idm_frm__="100" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(6).html"></iframe></ins></ins></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>
+
+											<hr class="my-5">
+											
+											<ul class="share-entry list-inline justify-content-center align-items-center"><li class="share-title list-inline-item">SHARE : </li><li class="list-inline-item"><a target="_blank" class="share-facebook" title="Share on Facebook" rel="external" href="https://www.facebook.com/share.php?u=https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/"><i class="fa fa-facebook"></i></a></li><li class="list-inline-item"><a target="_blank" class="share-twitter" title="Share on Twitter" rel="external" href="https://twitter.com/share?text=Membuat%20Cetak%20Print%20Laporan%20Dengan%20PHP&amp;url=https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/"><i class="fa fa-twitter"></i></a></li><li class="list-inline-item"><a target="_blank" class="share-googleplus" title="Share on Google+" rel="external" href="https://plusone.google.com/_/+1/confirm?url=https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/"><i class="fa fa-google-plus"></i></a></li><li class="list-inline-item"><a target="_blank" class="share-whatsapp" title="Share on Whatsapp" rel="external" href="https://api.whatsapp.com/send?text=Membuat%20Cetak%20Print%20Laporan%20Dengan%20PHP%20:%20https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/"><i class="fa fa-whatsapp"></i></a></li><li class="list-inline-item"><a target="_blank" class="share-email" title="Share on Email" rel="external" href="mailto:?subject=Membuat%20Cetak%20Print%20Laporan%20Dengan%20PHP&amp;body=Membuat%20Cetak%20Print%20Laporan%20Dengan%20PHP%20:%20https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/"><i class="fa fa-envelope-o"></i></a></li></ul>
+											<hr class="my-5">
+											
+
+											<div class="media panel-body dah-author xs-center">
+												<div class="media-left col-xs-12 col-md-2 col-lg-2 col-sm-2">						
+													<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f.png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=200&amp;d=mm&amp;r=g 2x" class="avatar avatar-100 photo" height="100" width="100">					
+												</div>
+
+												<div class="media-body px-4">						
+													<span class="dah-author-nama">Diki Alfarabi Hadi</span>
+													<p class="dah-author-tentang">Coding enthusiast.
+Someone who love learn something new. especially about web programming and web design. happy to share about knowledge and learn from other.</p>
+
+													<ul class="list-inline">
+														<li class="list-inline-item"><a href="https://www.malasngoding.com/author/admin/">Author's profile</a></li>
+														<li class="list-inline-item"><a href="https://www.malasngoding.com/author/admin/">All posts by Diki Alfarabi Hadi</a></li>										
+													</ul>
+												</div>
+											</div>
+
+
+
+
+											<div class="post-tag clear">
+												<span class="post-tag-tittle">Tags: </span><a href="https://www.malasngoding.com/tag/cara-membuat-cetak-laporan-di-php/" rel="tag">cara membuat cetak laporan di php</a>, <a href="https://www.malasngoding.com/tag/cara-membuat-perintah-print-pada-php/" rel="tag">cara membuat perintah print pada php</a>, <a href="https://www.malasngoding.com/tag/cara-membuat-print-preview-dengan-php/" rel="tag">cara membuat print preview dengan php</a>, <a href="https://www.malasngoding.com/tag/cetak-data-php/" rel="tag">cetak data php</a>, <a href="https://www.malasngoding.com/tag/cetak-laporan-dengan-php/" rel="tag">cetak laporan dengan php</a>, <a href="https://www.malasngoding.com/tag/membuat-cetak-laporan-dengan-php/" rel="tag">membuat cetak laporan dengan php</a>, <a href="https://www.malasngoding.com/tag/membuat-halaman-cetak-print-dengan-php/" rel="tag">membuat halaman cetak print dengan php</a>, <a href="https://www.malasngoding.com/tag/membuat-laporan-berdasarkan-tanggal-dengan-php/" rel="tag">membuat laporan berdasarkan tanggal dengan php</a>, <a href="https://www.malasngoding.com/tag/membuat-laporan-pdf-php-berdasarkan-kondisi/" rel="tag">membuat laporan pdf php berdasarkan kondisi</a>, <a href="https://www.malasngoding.com/tag/membuat-print-laporan-dengan-php/" rel="tag">membuat print laporan dengan php</a>, <a href="https://www.malasngoding.com/tag/print-data-dengan-php/" rel="tag">print data dengan php</a>, <a href="https://www.malasngoding.com/tag/print-data-php/" rel="tag">print data php</a>, <a href="https://www.malasngoding.com/tag/print-laporan-dengan-php/" rel="tag">print laporan dengan php</a>, <a href="https://www.malasngoding.com/tag/print-php/" rel="tag">print php</a>, <a href="https://www.malasngoding.com/tag/print/" rel="tag">print()</a>, <a href="https://www.malasngoding.com/tag/script-php-cetak-laporan-pdf/" rel="tag">script php cetak laporan pdf</a>, <a href="https://www.malasngoding.com/tag/script-php-print-pdf/" rel="tag">script php print pdf</a>, <a href="https://www.malasngoding.com/tag/source-code-cetak-laporan-dengan-php/" rel="tag">source code cetak laporan dengan php</a>, <a href="https://www.malasngoding.com/tag/tombol-cetak-php/" rel="tag">tombol cetak php</a>, <a href="https://www.malasngoding.com/tag/tombol-print-php/" rel="tag">tombol print php</a>, <a href="https://www.malasngoding.com/tag/window-print/" rel="tag">window.print()</a><br> 
+											</div>			
+										</div>
+
+									</article>
+
+								</div>
+							</div>
+
+
+							<!-- /post -->	
+							
+
+
+							
+
+				</div>
+				<div class="col-lg-4 col-sm-12 col-xs-12" style="height: auto !important; min-height: 0px !important;">
+					<div class="dah-sidebar" style="height: auto !important;">
+
+	<!-- list tutorial per kategori -->
+					<div class="sidebar-content">					
+					<h4 class="my-special-class">Tutorial PHP Dasar</h4>		
+					<ul>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-dasar-pengenalan-dan-kegunaan-php/">#1. Pengenalan PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-instalasi-web-server-di-windows/">#2. Instalasi Web Server</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-dasar-untuk-pemula/">#3. PHP Dasar</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-mengenal-variabel-di-php/">#4. Variabel PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-tipe-data-pada-php/">#5. Tipe Data PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-manipulasi-string-pada-php/">#6. String PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-kondisi-if-else-pada-php/">#7. If Else PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-mengenal-function-pada-php/">#8. Function PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-penggunaan-switch-case-pada-php/">#9. Switch Case PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-perulangan-while-pada-php/">#10. While PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-perulangan-for-pada-php/">#11. For PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-mengenal-array-pada-php/">#12. Array PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-menampilkan-tanggal-pada-php/">#13. Tanggal PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-mengenal-include-dan-require-pada-php/">#14. Include dan Required</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-penanganan-form-pada-php/">#15. Form Handling PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-operator-aritmatika-di-php/">#16. Operator Aritmatika PHP</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-pengertian-dan-pengenalan-foreach/">#17. Foreach PHP</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/belajar-php-pengertian-dan-pengenalan-foreach/">#18. Format Nomor PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/mengenal-fungsi-explode-dan-implode-pada-php/">#19. Explode dan Implode PHP</a>
+						</li>						
+					</ul>
+
+					<h4 class="my-special-class">Tutorial PHP Lanjutan</h4>		
+					<ul>
+						<li>
+							<a href="https://www.malasngoding.com/memeriksa-ketersediaan-file-dengan-php/">#1. File Exist PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/cara-membuat-dan-menghapus-folder-dengan-php/">#2. Mkdir dan Rmdir</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/pengertian-dan-cara-membuat-base64-pada-php/">#3. Base64 PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-kalkulator-sederhana-dengan-php/">#4. Membuat Kalkulator</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-halaman-web-dinamis-dengan-php/">#5. Halaman Web Dinamis</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/cara-membuat-koneksi-php-dengan-database-mysql/">#6. Koneksi PHP dan MySQL</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-form-login-dengan-php-dan-mysql/">#7. Login PHP</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/cara-membuat-captcha-dengan-php/">#8. Captcha PHP</a>
+						</li>
+
+						<li>
+							<a href="https://www.malasngoding.com/membuat-upload-file-dengan-php-dan-mysql/">#9. Upload File</a>
+						</li>					
+						<li>
+							<a href="https://www.malasngoding.com/cara-membuat-form-validasi-dengan-php/">#10. Form Validation PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-paging-dengan-php-dan-mysql/">#11. Pagination / Penomoran Halaman</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/category/php">#12. PHP Lanjutan Lainnya</a>
+						</li>											
+					</ul>
+
+					<h4 class="my-special-class">Tutorial PHP CRUD</h4>		
+					<ul>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/">#1. Menampilkan Data Dari Database</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-input-data/">#2. Input Data Ke Database</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-edit-data/">#3. Edit Data</a>
+						</li>		
+						<li>
+							<a href="https://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-hapus-data/">#4. Hapus Data</a>
+						</li>														
+					</ul>
+
+					<h4 class="my-special-class">Tutorial PHP OOP</h4>		
+					<ul>
+						<li>
+							<a href="https://www.malasngoding.com/pengertian-dan-pengenalan-oop-pada-php/">#1. Pengenalan OOP PHP</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/php-oop-part-2-pengertian-class-object-property-dan-method/">#2. Class, Object, Property dan Method</a>
+						</li>
+						<li>
+							<a href="https://www.malasngoding.com/php-oop-pengenalan-construct-dan-destruct-pada-oop-php/">#3. Construct dan Destruct</a>
+						</li>		
+						<li>
+							<a href="https://www.malasngoding.com/php-oop-part-4-pengertian-enkapsulasi-public-private-protected/">#4. Enkapsulasi</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/php-oop-pewarisan-sifat-inheritance-pada-oop-php/">#5. Inheritance</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/membuat-crud-dengan-oop-php-dan-mysql/">#6. CRUD OOP PHP</a>
+						</li>	
+						<li>
+							<a href="https://www.malasngoding.com/category/php">#7. PHP Lanjutan Lainnya</a>
+						</li>														
+					</ul>
+				</div>
+				
+
+	<div class="sidebar-content" style="height: auto !important;">			<div class="textwidget" style="height: auto !important;"><p style="height: auto !important;"><script async="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/f(11).txt"></script><br>
+<!-- Mading --><br>
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1836273468394125" data-ad-slot="1291596698" data-ad-format="auto" data-adsbygoogle-status="done" data-overlap-observer-io="false"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:353px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:353px;background-color:transparent;"><iframe width="353" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 353px; height: 280px; overflow: visible;" __idm_frm__="101" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(7).html"></iframe></ins></ins></ins><br>
+<script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+</div>
+		</div><div class="sidebar-content"><h4 class="my-special-class">Produk</h4><ul class="product_list_widget"><li>
+	
+	<a href="https://www.malasngoding.com/product/panduan-lengkap-laravel-untuk-pemula-dari-dasar-sampai-membuat-aplikasi-keuangan/">
+		<img width="300" height="300" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Ebook-Panduan-Lengkap-Laravel-Untuk-Pemula-Dari-Dasar-Sampai-Membuat-Aplikasi-Keuangan-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Ebook Panduan Lengkap Laravel Untuk Pemula Dari Dasar Sampai Membuat Aplikasi Keuangan" srcset="https://www.malasngoding.com/wp-content/uploads/2020/02/Ebook-Panduan-Lengkap-Laravel-Untuk-Pemula-Dari-Dasar-Sampai-Membuat-Aplikasi-Keuangan-300x300.png 300w, https://www.malasngoding.com/wp-content/uploads/2020/02/Ebook-Panduan-Lengkap-Laravel-Untuk-Pemula-Dari-Dasar-Sampai-Membuat-Aplikasi-Keuangan-150x150.png 150w, https://www.malasngoding.com/wp-content/uploads/2020/02/Ebook-Panduan-Lengkap-Laravel-Untuk-Pemula-Dari-Dasar-Sampai-Membuat-Aplikasi-Keuangan-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Panduan Lengkap Laravel Untuk Pemula Dari Dasar Sampai Membuat Aplikasi Keuangan</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;200,000</span>
+	</li>
+<li>
+	
+	<a href="https://www.malasngoding.com/product/source-code-e-voting-berbasis-web-menggunakan-php-dan-mysqli/">
+		<img width="300" height="300" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Source Code E-Voting Berbasis Web Menggunakan PHP dan MySQLi" srcset="https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-300x300.png 300w, https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-150x150.png 150w, https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-768x768.png 768w, https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-600x600.png 600w, https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1-100x100.png 100w, https://www.malasngoding.com/wp-content/uploads/2019/12/Source-Code-E-Voting-Berbasis-Web-Menggunakan-PHP-dan-MySQLi-1.png 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Source Code E-Voting Berbasis Web Menggunakan PHP dan MySQLi</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;200,000</span>
+	</li>
+<li>
+	
+	<a href="https://www.malasngoding.com/product/source-code-website-forum-menggunakan-php-dan-mysqli/">
+		<img width="300" height="300" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/source-code-website-forum-menggunakan-php-dan-mysqli-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="source code website forum menggunakan php dan mysqli" srcset="https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli-300x300.png 300w, https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli-150x150.png 150w, https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli-768x768.png 768w, https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli-600x600.png 600w, https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli-100x100.png 100w, https://www.malasngoding.com/wp-content/uploads/2019/12/source-code-website-forum-menggunakan-php-dan-mysqli.png 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Source Code Website Forum Menggunakan PHP dan MySQLi</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;200,000</span>
+	</li>
+<li>
+	
+	<a href="https://www.malasngoding.com/product/template-dashboard-bootstrap-premium-atlantis-pro/">
+		<img width="300" height="300" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Template Dashboard Bootstrap Premium Atlantis PRO" srcset="https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-300x300.png 300w, https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-150x150.png 150w, https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-768x768.png 768w, https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-600x600.png 600w, https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO-100x100.png 100w, https://www.malasngoding.com/wp-content/uploads/2019/11/Template-Dashboard-Bootstrap-Premium-Atlantis-PRO.png 800w" sizes="(max-width: 300px) 100vw, 300px">		<span class="product-title">Template Dashboard Bootstrap Premium Atlantis PRO</span>
+	</a>
+
+				
+	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">Rp</span>&nbsp;199,000</span>
+	</li>
+</ul></div>		<div class="sidebar-content">		<h4 class="my-special-class">Tutorial Terbaru</h4>		<ul>
+											<li>
+					<a href="https://www.malasngoding.com/border-bootstrap-4/">Tutorial Bootstrap 4 #35 : Border Bootstrap 4</a>
+											<span class="post-date">October 22, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.malasngoding.com/tooltips-bootstrap-4/">Tutorial Bootstrap 4 #34 : Tooltips Bootstrap 4</a>
+											<span class="post-date">September 13, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.malasngoding.com/toasts-bootstrap-4/">Tutorial Bootstrap 4 #33 : Toasts Bootstrap 4</a>
+											<span class="post-date">September 9, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.malasngoding.com/spinners-bootstrap-4/">Tutorial Bootstrap 4 #32 : Spinners Bootstrap 4</a>
+											<span class="post-date">September 7, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.malasngoding.com/scrollspy-bootstrap-4/">Tutorial Bootstrap 4 #31 : Scrollspy Bootstrap 4</a>
+											<span class="post-date">September 6, 2019</span>
+									</li>
+					</ul>
+		</div><div class="sidebar-content"><h4 class="my-special-class">Toko Kami</h4>			<div class="textwidget"><a target="_blank" href="https://www.bukalapak.com/tutorialpemrograman" rel="noopener noreferrer"><img class="marketplace" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/bukalapak.png"></a>
+
+<a target="_blank" href="https://www.tokopedia.com/malasngoding" rel="noopener noreferrer"><img class="marketplace" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/logo-tokopedia.png"></a>
+
+<img class="marketplace" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Ebook-tutorial-pemrograman-lengkap-bahasa-indonesia-murah.png"></div>
+		</div>	
+
+	<div class="sidebar-content sticky-top" style="">
+		<h4 class="my-special-class">SOCIAL</h4>
+		<center>
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/malasngodingpage/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=986519541536910&amp;container_width=0&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmalasngodingpage%2F&amp;locale=id_ID&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 340px; height: 180px;"><iframe name="f3fa28f42655b8" width="1000px" height="1000px" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/page.html" style="border: none; visibility: visible; width: 340px; height: 180px;" __idm_frm__="116" class=""></iframe></span></div>
+</center>
+	</div>
+
+</div>				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 mb-4 mt-4 px-4">
+					<!-- related -->	
+					<h3 class="text-tutorial-lainnya my-4 mx-0">TUTORIAL MENARIK LAINNYA</h3>	
+					<div class="row flex-row">
+
+						
+
+								
+								<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 px-2">
+	<div class="post card card-post mb-4 box-shadow">
+		<img width="945" height="595" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Import-Excel-Ke-MySQL-Dengan-PHP-1.png" class="card-img-top post-sampul wp-post-image" alt="Import Excel Ke MySQL Dengan PHP" srcset="https://www.malasngoding.com/wp-content/uploads/2018/10/Import-Excel-Ke-MySQL-Dengan-PHP-1.png 945w, https://www.malasngoding.com/wp-content/uploads/2018/10/Import-Excel-Ke-MySQL-Dengan-PHP-1-600x378.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/10/Import-Excel-Ke-MySQL-Dengan-PHP-1-300x189.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/10/Import-Excel-Ke-MySQL-Dengan-PHP-1-768x484.png 768w" sizes="(max-width: 945px) 100vw, 945px">		
+
+		<div class="card-body">
+			<article>
+				<span class="meta-category">
+					<a class="text-primary post-category" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>				</span>
+
+				<h2 class="post-title entry-title mb-3">
+					<a class="text-dark" href="https://www.malasngoding.com/import-excel-ke-mysql-dengan-php/">Import Excel Ke MySQL Dengan PHP</a>
+				</h2>	
+
+				<span class="meta-date updated text-sembunyi"><time class="entry-date published updated">30 October 2018</time></span>
+
+				<div class="post-excerpt card-text text-sembunyi">
+					Import Excel Ke MySQL Dengan PHP Import Excel Ke MySQL Dengan PHP – Selamat datang kembali di seri tutorial php dasar bahasa indonesia terlengkap. kali ...				</div>
+
+				<div class="postmeta d-flex align-items-center">
+					<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f(1).png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26">						
+					<span class="vcard author post-author">
+						<a class="url fn n" href="https://www.malasngoding.com/author/admin/">Diki Alfarabi Hadi</a>
+					</span>				
+				</div>
+
+			</article>
+		</div>
+	</div>
+</div>								
+								<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 px-2">
+	<div class="post card card-post mb-4 box-shadow">
+		<img width="945" height="595" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Membuat-Login-Multi-User-Level-Dengan-PHP-dan-MySQLi-1.png" class="card-img-top post-sampul wp-post-image" alt="Membuat Login Multi User Level Dengan PHP dan MySQLi" srcset="https://www.malasngoding.com/wp-content/uploads/2018/10/Membuat-Login-Multi-User-Level-Dengan-PHP-dan-MySQLi-1.png 945w, https://www.malasngoding.com/wp-content/uploads/2018/10/Membuat-Login-Multi-User-Level-Dengan-PHP-dan-MySQLi-1-600x378.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/10/Membuat-Login-Multi-User-Level-Dengan-PHP-dan-MySQLi-1-300x189.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/10/Membuat-Login-Multi-User-Level-Dengan-PHP-dan-MySQLi-1-768x484.png 768w" sizes="(max-width: 945px) 100vw, 945px">		
+
+		<div class="card-body">
+			<article>
+				<span class="meta-category">
+					<a class="text-primary post-category" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>				</span>
+
+				<h2 class="post-title entry-title mb-3">
+					<a class="text-dark" href="https://www.malasngoding.com/membuat-login-multi-user-level-dengan-php-dan-mysqli/">Membuat Login Multi User Level Dengan PHP dan MySQLi</a>
+				</h2>	
+
+				<span class="meta-date updated text-sembunyi"><time class="entry-date published updated">14 October 2018</time></span>
+
+				<div class="post-excerpt card-text text-sembunyi">
+					Membuat Login Multi User Level Dengan PHP dan MySQLi Membuat Login Multi User Level Dengan PHP dan MySQLi – Hai teman-teman semua yang masih setia ...				</div>
+
+				<div class="postmeta d-flex align-items-center">
+					<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f(1).png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26">						
+					<span class="vcard author post-author">
+						<a class="url fn n" href="https://www.malasngoding.com/author/admin/">Diki Alfarabi Hadi</a>
+					</span>				
+				</div>
+
+			</article>
+		</div>
+	</div>
+</div>								
+								<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 px-2">
+	<div class="post card card-post mb-4 box-shadow">
+		<img width="945" height="595" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/Export-Data-Ke-Excel-Dari-Database-Dengan-PHP-dan-MySQLi-1.png" class="card-img-top post-sampul wp-post-image" alt="Export Data Ke Excel Dari Database Dengan PHP dan MySQLi" srcset="https://www.malasngoding.com/wp-content/uploads/2018/09/Export-Data-Ke-Excel-Dari-Database-Dengan-PHP-dan-MySQLi-1.png 945w, https://www.malasngoding.com/wp-content/uploads/2018/09/Export-Data-Ke-Excel-Dari-Database-Dengan-PHP-dan-MySQLi-1-600x378.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/09/Export-Data-Ke-Excel-Dari-Database-Dengan-PHP-dan-MySQLi-1-300x189.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/09/Export-Data-Ke-Excel-Dari-Database-Dengan-PHP-dan-MySQLi-1-768x484.png 768w" sizes="(max-width: 945px) 100vw, 945px">		
+
+		<div class="card-body">
+			<article>
+				<span class="meta-category">
+					<a class="text-primary post-category" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>				</span>
+
+				<h2 class="post-title entry-title mb-3">
+					<a class="text-dark" href="https://www.malasngoding.com/export-data-ke-excel-dari-database-dengan-php-dan-mysqli/">Export Data Ke Excel Dari Database Dengan PHP dan MySQLi</a>
+				</h2>	
+
+				<span class="meta-date updated text-sembunyi"><time class="entry-date published updated">16 September 2018</time></span>
+
+				<div class="post-excerpt card-text text-sembunyi">
+					Export Data Ke Excel Dari Database Dengan PHP dan MySQLi Export Data Ke Excel Dari Database Dengan PHP dan MySQLi&nbsp;adalah judul pada tutorial kali ini. ...				</div>
+
+				<div class="postmeta d-flex align-items-center">
+					<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f(1).png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26">						
+					<span class="vcard author post-author">
+						<a class="url fn n" href="https://www.malasngoding.com/author/admin/">Diki Alfarabi Hadi</a>
+					</span>				
+				</div>
+
+			</article>
+		</div>
+	</div>
+</div>								
+								<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 px-2">
+	<div class="post card card-post mb-4 box-shadow">
+		<img width="945" height="595" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/membuat-grafik-dari-database-dengan-php-part-2.png" class="card-img-top post-sampul wp-post-image" alt="" srcset="https://www.malasngoding.com/wp-content/uploads/2018/09/membuat-grafik-dari-database-dengan-php-part-2.png 945w, https://www.malasngoding.com/wp-content/uploads/2018/09/membuat-grafik-dari-database-dengan-php-part-2-600x378.png 600w, https://www.malasngoding.com/wp-content/uploads/2018/09/membuat-grafik-dari-database-dengan-php-part-2-300x189.png 300w, https://www.malasngoding.com/wp-content/uploads/2018/09/membuat-grafik-dari-database-dengan-php-part-2-768x484.png 768w" sizes="(max-width: 945px) 100vw, 945px">		
+
+		<div class="card-body">
+			<article>
+				<span class="meta-category">
+					<a class="text-primary post-category" rel="category tag" href="https://www.malasngoding.com/category/php/">PHP</a>				</span>
+
+				<h2 class="post-title entry-title mb-3">
+					<a class="text-dark" href="https://www.malasngoding.com/membuat-grafik-dari-database-dengan-php-part-2/">Membuat Grafik Dari Database Dengan PHP Part 2</a>
+				</h2>	
+
+				<span class="meta-date updated text-sembunyi"><time class="entry-date published updated">15 September 2018</time></span>
+
+				<div class="post-excerpt card-text text-sembunyi">
+					Membuat Grafik Dari Database Dengan PHP Part 2 Membuat Grafik Dari Database Dengan PHP Part 2 – Tutorial ini merupakan kelanjutan dari tutorial Membuat Grafik ...				</div>
+
+				<div class="postmeta d-flex align-items-center">
+					<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f(1).png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=52&amp;d=mm&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26">						
+					<span class="vcard author post-author">
+						<a class="url fn n" href="https://www.malasngoding.com/author/admin/">Diki Alfarabi Hadi</a>
+					</span>				
+				</div>
+
+			</article>
+		</div>
+	</div>
+</div>								
+
+												</div>								
+				</div>
+
+				<div class="col-lg-9 ml-auto mr-auto">
+					<div class="card card-comment">
+	<div class="card-heading">
+		<h6 class="card-title text-semiold">Diskusi<a class="heading-elements-toggle"><i class="fa fa-comment-o mx-2"></i></a></h6>		
+		<span class="meta-comments">7 Komentar</span>
+	</div>
+			<div class="card-body">							
+			<ul class="comment-list media-list comment-box media-list stack-media-on-mobile">
+				 
+
+	<li class="comment even thread-even depth-1 media mb-4" id="comment-3297">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/3a878937e2721824230e57d08a949f6b.png" srcset="https://secure.gravatar.com/avatar/3a878937e2721824230e57d08a949f6b?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">arif w</span>
+					<span class="comment-time">
+						2 years ago 
+					</span>
+				</div>
+								<p> </p><p>mantap!</p>
+<p>sudah terjawab apa yg selama ini dicari.. makasih banyak gan</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+ 
+
+	<li class="comment odd alt thread-odd thread-alt depth-1 media mb-4" id="comment-4110">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/9f837444da3662ca711d89a9818ce0d7.png" srcset="https://secure.gravatar.com/avatar/9f837444da3662ca711d89a9818ce0d7?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">Eka</span>
+					<span class="comment-time">
+						2 years ago 
+					</span>
+				</div>
+								<p> </p><p>Alhamdulillah….. Terima Kasih , ini sangat membantu</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+ 
+
+	<li class="comment even thread-even depth-1 media mb-4" id="comment-7252">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/none.png" srcset="https://secure.gravatar.com/avatar/?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo avatar-default" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">tedy suwanda</span>
+					<span class="comment-time">
+						1 year ago 
+					</span>
+				</div>
+								<p> </p><p>Terima kasih atas sharingnya, yaitu dengan window.print pada javascript yang digunakan untuk memanggil fungsi print.</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+ 
+
+	<li class="comment odd alt thread-odd thread-alt depth-1 media mb-4" id="comment-15484">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/54133f588f1d325cc3a3d66476c911c1.png" srcset="https://secure.gravatar.com/avatar/54133f588f1d325cc3a3d66476c911c1?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">M. Marozib Husaini</span>
+					<span class="comment-time">
+						1 year ago 
+					</span>
+				</div>
+								<p> </p><p>mas seumpama mau ngeprint laporan tapi per id laporan caranya gimana?</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<ul class="children">
+ 
+
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2 media mb-4" id="comment-15489">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ce966eed7014d53e5f47c9090e6f827f(2).png" srcset="https://secure.gravatar.com/avatar/ce966eed7014d53e5f47c9090e6f827f?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">Diki Alfarabi Hadi</span>
+					<span class="comment-time">
+						1 year ago 
+					</span>
+				</div>
+								<p> </p><p>tinggal seleksi aja data yang ingin di tampilkan menurut id nya mas, kemudian tinggal tambah fungsi js untuk print nya</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+ 
+
+	<li class="comment odd alt thread-even depth-1 media mb-4" id="comment-17165">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/4bba90b9df8bc6e09adcd56f837fe27b.png" srcset="https://secure.gravatar.com/avatar/4bba90b9df8bc6e09adcd56f837fe27b?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">Muhammad Fandi</span>
+					<span class="comment-time">
+						11 months ago 
+					</span>
+				</div>
+								<p> </p><p>Mas, gimana ya caranya biar link halaman sama tgl desktopnya biar gk ikut keprint ya :D?</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+ 
+
+	<li class="comment even thread-odd thread-alt depth-1 media mb-4" id="comment-17927">
+		<div class="media">
+			<div class="media-left mr-3">
+				<img alt="" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/bbdd34536070a5bc872b937962b59e1e.png" srcset="https://secure.gravatar.com/avatar/bbdd34536070a5bc872b937962b59e1e?s=64&amp;d=mm&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32">			</div>
+			<div class="media-body">
+				<div class="media-heading">
+					<span class="comment-author">fatur</span>
+					<span class="comment-time">
+						10 months ago 
+					</span>
+				</div>
+								<p> </p><p>contohnya mas</p>
+<p></p>
+
+				<ul class="list-inline list-inline-separate text-size-small">                   
+					<li> </li>          
+				</ul>
+			</div>
+		</div>    
+	</li>
+	<!-- #comment-## -->
+			</ul>			
+		</div>
+		
+	<hr class="no-margin">
+
+	<div class="card-body">			
+		<div class="content-group">
+									
+		</div>
+	</div>
+</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+<section class="section-info">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-3 col-md-4 col-xs-12 col-sm-12">
+				<div class="section-info-kiri">
+					<img class="card-img-top" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/ebook-html-dan-css-dasar.png">
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8 col-xs-12 col-sm-12">
+				<div class="section-info-kanan">
+					<h2>Download Ebook belajar HTML &amp; CSS dasar untuk pemula gratis.</h2>
+					<p class="mb-4 mt-4">
+						Ebook ini di buat oleh <b>Diki Alfarabi Hadi</b>, Founder dari www.malasngoding.com.
+						yang aktif menulis tutorial pemrograman di www.malasngoding.com.
+						ebook ini bisa di download oleh teman-teman yang baru mulai belajar HTML dan CSS dasar tapi tidak tahu mau memulai belajar dari mana.
+						materi pembelajaran sudah di susun secara sistematis dan di dukung contoh gambar.						
+					</p>
+					<a target="_blank" href="https://www.malasngoding.com/download-ebook-belajar-html-dan-css-dasar-gratis/" class="button--primary">DOWNLOAD</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="modal modal-produk modal-promosi fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="ModalProduk" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog modal-lg box-shadow" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Penawaran menarik !</h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">		
+				<div class="row px-2">
+					<div class="col-md-7">
+						<h1>Waktunya upgrade skill !</h1>
+						<p>Belajar Membuat Website Sampai <b>ONLINE</b> Dengan CodeIgniter!</p>
+						<p>
+							<b>EBOOK BELAJAR MEMBUAT CMS WEBSITE DENGAN CODEIGNITER DARI NOL SAMPAI ONLINE</b> <br><br> berisi tutorial codeigniter jelas dan lengkap. dan disertai <b>FULL SOURCE CODE WEBSITE</b> hasil jadinya. dan diajarkan sampai website ONLINE.
+							<br>
+							+ BONUS KODE PROMO HOSTING 10%
+							<br>
+							Dan dapatkan bonus <b>Ebook Jquery Dasar </b> dari pembelian ebook ini dari www.malasngoding.com.
+						</p>
+						<p>Jangan sampai telat… !!</p>
+					</div>
+					<div class="col-md-5">
+						<img src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/membuat-website-dengan-codeigniter-1.png">						
+					</div>
+				</div>								
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="modal-jangan-tampil tombol-bening" data-dismiss="modal">Jangan tampilkan lagi</button>
+				<a class="tombol-biru" href="https://www.malasngoding.com/product/membuat-website-dengan-codeigniter/">YA, SAYA MAU !</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- modal gratis ongkir -->	
+<div id="myModalOngkir" class="modal modal-produk fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="ModalProduk">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Penawaran menarik !</h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">		
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="text-primary">GRATIS ONGKIR !</h1>
+						<p>
+							Silahkan hubungi admin untuk membeli produk ini. produk bisa dikirimkan melalui email. 
+							dan anda bisa langsung download.
+							<br>
+							<br>
+							Sehingga tidak perlu menggunakan <b>biaya pengiriman</b>.
+							<br>
+							<br>
+							Cara Pembelian / Hubungi :
+							</p><table class="table table-bordered table-striped table-hover">
+								<tbody><tr>
+									<th>Whatsapp</th>
+									<td>0896-0676-7404</td>
+								</tr>
+								<tr>
+									<th>Email</th>
+									<td>malasngoding@gmail.com</td>
+								</tr>
+							</tbody></table>
+
+							<br>
+							Dan dapatkan bonus menarik dengan membeli produk ini.
+							<br>
+						<p></p>													
+					</div>
+
+				</div>								
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<footer class="footer text-xs-center">
+	<div class="container">
+		<div class="row footer-top pb-1">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0 pt-1">					
+				<ul class="list-inline text-xs-center">
+					<li>
+						<a target="_blank" href="https://www.malasngoding.com/shop">
+							<span class="">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.malasngoding.com/forum">
+							<span class="">Forum</span>								
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.malasngoding.com/membuat-cetak-print-laporan-dengan-php/#">
+							<span class="">halo@malasngoding.com</span> 
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0">
+				<ul class="social-list list-inline text-right text-xs-center">
+					<li>
+						<a target="_blank" href="https://www.youtube.com/malasngoding?sub_confirmation=1">
+							<i class="fa fa-youtube"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/malasngoding">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.facebook.com/malasngodingpage/">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.instagram.com/malasngoding/">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/malasngoding/">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://api.whatsapp.com/send?phone=6289606767404&amp;text=Halo%20Admin">
+							<i class="fa fa-whatsapp"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--end of row-->
+		<div class="row footer-bottom pt-2">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pt-0 pl-2">
+				<p class="footer-by">						
+					© 2020 <a href="https://www.malasngoding.com/">www.malasngoding.com</a> with <img class="icon-hati" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/malas-ngoding-tutorial-pemrograman-terlengkap-bahasa-indonesia-untuk-pemula-sampai-mahir.gif">
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center-xs p-0">
+
+				<ul class="list-inline text-right text-xs-center">
+					<li>
+						<a href="https://www.malasngoding.com/cara-pemesanan-produk/">
+							<span class="">Cara Pemesanan</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.malasngoding.com/pasang-iklan-murah-di-www-malasngoding-com/">
+							<span class="">Pasang Iklan</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.malasngoding.com/kontak/">
+							<span class="">Kontak</span>
+						</a>
+					</li>
+				</ul>									
+			</div>
+		</div>
+	</div>
+</footer>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/jquery.blockUI.min.js.download" defer="defer" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.malasngoding.com","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/add-to-cart.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/js.cookie.min.js.download" defer="defer" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/woocommerce.min.js.download" defer="defer" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_354eeb0332f55443eace0ec8e6765d9c","fragment_name":"wc_fragments_354eeb0332f55443eace0ec8e6765d9c","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/cart-fragments.min.js.download" defer="defer" type="text/javascript"></script>
+<script src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/wp-embed.min.js.download" defer="defer" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var search = 
+		'<li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown nav-item">'+
+		'<button type="button" title="Cari tutorial" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-primary"><i class="fa fa-search"></i></button>'+
+		'<ul class="dropdown-menu dropdown-menu-right dropdown-search p-3" role="menu">'+
+		'<form id="searchform" action="https://www.malasngoding.com/" class="" method="get">'+
+		'<label class="text-muted"><small>Cari tutorial</smalll></label>'+
+		'<input autocomplete="off" class="form-control mb-2 " placeholder="" type="text" value="" name="s" id="s" placeholder=""/>'+
+		'</form>'+
+		'</ul>'+
+		'</li>';
+		
+		$('#menu-menu-primary').append(search);
+	});
+</script>
+
+
+
+<!-- Dynamic page generated in 0.499 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-02-12 08:37:32 -->
+
+<!-- super cache --><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" __idm_frm__="102" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(8).html"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_2290936383104" name="google_osd_static_frame" __idm_frm__="105" style="display: none; width: 0px; height: 0px;" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/saved_resource(9).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./Membuat Cetak Print Laporan Dengan PHP - Malas Ngoding_files/zrt_lookup.html" data-ad-client="ca-pub-1836273468394125" style="display: none;"></iframe></html>
